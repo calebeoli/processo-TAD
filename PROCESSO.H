@@ -10,6 +10,11 @@ typedef struct {
     int ano_eleicao;
 } Processo;
 
+typedef struct {
+    char id_classe[255];
+    int count;
+} ClasseCount;
+
 int lerDados(const char *nome_arquivo, Processo *X, int max_registros);
 void imprimirDados(Processo *X, int qtd);
 void insertion_sort(Processo *X, int total_registros);
